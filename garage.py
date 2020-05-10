@@ -5,7 +5,6 @@ app = Flask(__name__)
 from elasticsearch import Elasticsearch
 import Adafruit_DHT
 import RPi.GPIO as GPIO
-import requests
 import time
 
 
@@ -54,3 +53,5 @@ if __name__ == "__main__":
                    "port": 8000,
                    "debug": False }
     app.run(**run_options)
+
+
